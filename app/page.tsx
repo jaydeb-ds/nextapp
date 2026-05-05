@@ -1,21 +1,13 @@
 "use client"
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
-export default function Home() {
-  const router = useRouter()
-  return (
-    <>
-      Home page
+export default function page() {
 
-      navigation 
-      <a href="/about">about</a>
-      <Link href={"/profile"}>profile image</Link>
-
-      <button onClick={()=>router.push("/post")}>
-        go to my post page
-      </button>
-    </>
-  );
+  return(<>
+    <div className="w-screen h-100 flex justify-center items-center gap-[40px] flex-col">
+        <h1 className="text-[30px] text-red-200">Bhavans Tripura college of Science and technology</h1>
+        <h1 className="text-yellow-500 text-[40px]">Bsc.IT Batch 2026 </h1>
+    </div>
+  
+    
+  </>)
 }
