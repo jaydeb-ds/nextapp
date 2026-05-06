@@ -34,3 +34,7 @@ des = 33
 des = "good"
 // any type is default type of variable, user can write any thing in this (number, string, boolean etc) any thing it will not show any error
 
+let anything : any
+des = true
+des = 33
+des = "good"
