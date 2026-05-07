@@ -125,3 +125,24 @@ t1 = {
     exp : 12,
     dept : "BIT"
 }
+
+//  generic type
+
+function sum<T>(a:T):T{
+    return a
+}
+
+sum <number>(10)
+
+interface user <T>{
+    name : string,
+    age : T
+}
+
+let user1 : user<number> =
+{
+    name :"jay",
+    age: 12
+}
+
+                                                                    
