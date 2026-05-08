@@ -3,7 +3,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET() {
-    return NextResponse.json({message:"hello! welcome to  user route"})
+    return NextResponse.json({
+        message:"hello! welcome to  user route",
+        name:"Jaydeb Das",
+        age:33
+    })
 }
 
 // url = http://localhost:3000/api/user
