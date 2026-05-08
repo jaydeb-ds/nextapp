@@ -114,15 +114,15 @@ hs_std1 = {
 // combine of two interface (object) with 'extents'
 type dept = "BIT" | "BMLT" | "BBA"
 
-interface teacher extends emp 
+interface  teacher<T> extends emp
 {
-    dept : dept
+    dept : T
 }
 
-let t1 : teacher;
+let t1 : teacher<dept>;
 t1 = {
-    name : "partha banik",
-    exp : 12,
+    name :"Jaydeb das",
+    exp: 21,
     dept : "BIT"
 }
 
@@ -145,4 +145,3 @@ let user1 : user<number> =
     age: 12
 }
 
-                                                                    
